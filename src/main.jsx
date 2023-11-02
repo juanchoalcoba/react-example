@@ -1,12 +1,18 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
 import './index.css'
 import ImagenAnimada from './components/ImagenAnimada.jsx'
+import Navbar from './components/Navbar.jsx'
+import VideoFondo from './components/Video'
+import SobreUruguay from './components/SobreUruguay'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+    <div>
+    <Navbar />
+    <VideoFondo />
     <ImagenAnimada />
+    <SobreUruguay />
+    </div>
   </React.StrictMode>,
 )
