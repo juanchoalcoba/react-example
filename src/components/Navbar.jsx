@@ -2,8 +2,9 @@
 const Navbar = () => {
   return (
     <div className="flex flex-row justify-around">
-        <div>
-            <img src="/12.png" className='w-[100px] rounded-xl' alt="" />
+        <div className="flex flex-row">
+            <img src="/12.png" className='w-[120px] rounded-xl opacity-3' alt="" />
+            <img src="/gif.gif" className='w-[70px] opacity-7 ml-12' alt="" />
         </div>
        
         <div className="text-white">
