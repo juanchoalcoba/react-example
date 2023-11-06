@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <div className="flex flex-row justify-around">
         <div className="flex flex-row">
-            <img src="/12.png" className='w-[120px] rounded-xl opacity-3' alt="" />
+            <img src="/12.png" className='w-[80px] rounded-xl opacity-3' alt="" />
         </div>
        
         <div className="text-white">
