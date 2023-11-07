@@ -6,6 +6,7 @@ import Navbar from './components/Navbar.jsx'
 import VideoFondo from './components/Video'
 import SobreUruguay from './components/SobreUruguay'
 import Seccion3 from './components/Seccion3'
+import Utec from './components/Utec.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -15,6 +16,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <ImagenAnimada />
     <SobreUruguay />
     <Seccion3 />
+    <Utec />
     </div>
   </React.StrictMode>,
 )

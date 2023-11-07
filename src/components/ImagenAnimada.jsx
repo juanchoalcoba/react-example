@@ -1,4 +1,23 @@
+import { gsap } from "gsap";
+import { useEffect } from "react";
+
 const ImagenAnimada = () => {
+  useEffect(() => {
+    const tl = gsap.timeline();
+
+    // Anima el componente para que inicie pequeño y se agrande rápidamente
+    tl.fromTo('.section', {
+        scale: 0.1, // Comienza con un tamaño muy pequeño
+        opacity: 0, // Comienza completamente transparente
+    }, {
+        scale: 1, // Escala al tamaño original
+        opacity: 1, // Se desvanecerá a completamente visible
+        duration: 2, // Duración de la animación
+        ease: 'power1.inOut', // Curva de animación
+    });
+}, []);
+
+
   return (
     <div className="flex items-center justify-around mt-24 section">
       <div className="">
@@ -12,7 +31,7 @@ const ImagenAnimada = () => {
       </div>
 
       <div style={{ opacity: '0.8' }}>
-  <video autoPlay muted loop className="w-[600px] rounded-xl border border-white" controls>
+  <video autoPlay muted loop className="w-[600px] rounded-xl" controls>
     <source src="/uruguaynatural.mp4" type="video/mp4" />
     Tu navegador no soporta videos en HTML5.
   </video>

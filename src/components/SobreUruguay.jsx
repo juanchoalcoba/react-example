@@ -1,10 +1,55 @@
+import { useEffect } from 'react';
+import { gsap } from 'gsap'
+import Lenis from '@studio-freight/lenis'
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+
+
+const lenis = new Lenis()
+
+lenis.on('scroll', (e) => {
+  console.log(e)
+})
+
+function raf(time) {
+  lenis.raf(time)
+  requestAnimationFrame(raf)
+}
+
+requestAnimationFrame(raf)
+
 
 const SobreUruguay = () => {
+    useEffect(() => {
+        const tl = gsap.timeline();
 
- // Asegúrate de que este efecto solo se ejecute una vez
+        tl.fromTo('.probandoscroll', {
+            opacity: 0, // Comienza completamente transparente
+        }, {
+            opacity: 1, // Se desvanecerá a completamente visible
+            scrollTrigger: {
+                trigger: '.probandoscroll',
+                start: 'top center', // Inicia cuando el centro del elemento alcanza la parte superior de la ventana
+                end: 'bottom center', // Finaliza cuando el centro del elemento alcanza la parte inferior de la ventana
+                scrub: true, // Permite animaciones sincronizadas con el scroll
+            },
+        });
+
+        tl.fromTo('.puntos-suspensivos', {
+            opacity: 1, // Comienza completamente visible
+        }, {
+            opacity: 0, // Se desvanecerá a completamente transparente
+            scrollTrigger: {
+                trigger: '.puntos-suspensivos',
+                start: 'top center', // Inicia cuando el centro del elemento alcanza la parte superior de la ventana
+                end: 'bottom center', // Finaliza cuando el centro del elemento alcanza la parte inferior de la ventana
+                scrub: true, // Permite animaciones sincronizadas con el scroll
+            },
+        });
+    }, []);
 
     return (
-        <div className="flex flex-row justify-around mt-24" id="probandoscroll">
+        <div className="flex flex-row justify-around mt-24 probandoscroll" >
             <div>
                 <img 
                 className="w-[300px] border border-white rounded-2xl"
@@ -27,9 +72,9 @@ const SobreUruguay = () => {
                  
                  </div>
             </div>
-
+            <div className="puntos-suspensivos text-white">...</div>
         </div>
     )
 }
 
-export default SobreUruguay
+export default SobreUruguay;
