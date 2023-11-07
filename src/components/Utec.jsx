@@ -4,13 +4,13 @@ const Utec = () => {
         <div className="flex flex-row justify-around items-center ">
           <img
             src="/utec.jpg"
-            className="w-[20rem] "
+            className="w-[20rem] rounded-2xl"
             alt=""
           />
           <a href="https://utec.edu.uy/es/" target="_blank" rel="noopener noreferrer">
             <img
               src="/utec2.jpg"
-              className="w-[24rem] ml-4"
+              className="w-[24rem] ml-4 rounded-2xl"
               alt=""
             />
           </a>

@@ -14,10 +14,13 @@
   },
   "dependencies": {
     "@studio-freight/lenis": "^1.0.27",
+    "@tweenjs/tween.js": "^21.0.0",
     "gh-pages": "^6.0.0",
     "gsap": "^3.12.2",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "scrollmagic": "^2.0.8",
+    "scrollmagic-plugin-gsap": "^1.0.4"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",

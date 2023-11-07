@@ -7,6 +7,7 @@ import VideoFondo from './components/Video'
 import SobreUruguay from './components/SobreUruguay'
 import Seccion3 from './components/Seccion3'
 import Utec from './components/Utec.jsx'
+import Departamentos from './components/Departamentos.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -17,6 +18,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <SobreUruguay />
     <Seccion3 />
     <Utec />
+    <Departamentos />
     </div>
   </React.StrictMode>,
 )
