@@ -28,8 +28,8 @@ const ImagenAnimada = () => {
   return (
     <div className="flex items-center justify-around mt-24 section" ref={sectionRef}>
       <div className="">
-        <h1 className="text-[#77b7db] font-bold text-8xl title-animation">URU<span className="text-[#2c678a]">GUAY</span> <br /> <span><span className="text-[#2c678a]">TEC</span>NOLOGIA</span></h1>
-        <p className="text-[#c0dad4] w-[500px] font-bold mt-8 text-xl">Bievenidos al primer sitio uruguayo donde la tecnología esta en un mismo lugar!</p>
+        <h1 className="text-[#b0c1ca] font-bold text-8xl title-animation"><span className="text-yellow-400">U</span>RU<span className="text-[#6b91a5]">GUAY</span> <br /> <span><span className="text-[#6b91a5]">TEC</span>NOLOGIA</span></h1>
+        <p className="text-[#c0dad4] w-[500px] font-semibold mt-8 text-3xl">Bievenidos al primer sitio uruguayo donde la tecnología esta en un mismo lugar!</p>
         <div className="mt-8">
           <button className="text-white border border-white px-8 py-3 rounded-2xl">PROXIMAMENTE</button>
           <button className="text-white border border-white px-8 py-3 ml-8 rounded-2xl">TENDENCIAS</button>
