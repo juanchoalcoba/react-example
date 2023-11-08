@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import './Departamentos.css';
 
@@ -45,7 +44,7 @@ const Departamentos = () => {
           <p className="p-4 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, quas!</p>
         </div>
         <div className="flex justify-center">
-          <img className="w-[20rem] p-2" src="montevideo.png" alt="" />
+          <img className="w-[19rem] p-2" src="montevideo.png" alt="" />
         </div>
         <button onClick={() => handleVerMasClick('Montevideo')} className="bg-blue-500 text-white p-2 mt-2 rounded">Ver más</button>
       </div>
@@ -78,9 +77,29 @@ const Departamentos = () => {
       {showModal && selectedDepartamento && (
         <div className="modal">
           <div className="modal-content">
-            <h2 className="text-2xl mb-4">{selectedDepartamento}</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <button onClick={() => setShowModal(false)} className="bg-blue-500 text-white p-2 mt-4 rounded">Cerrar</button>
+            <h2 className="text-4xl mb-4">{selectedDepartamento}</h2>
+            {selectedDepartamento === 'Montevideo' && (
+              <div>
+                <p className="text-center">Información detallada sobre Montevideo...</p>
+                <img src="montemodal.jpg" alt="Montevideo Detalles" className="mx-auto mt-4 rounded-xl" />
+              </div>
+            )}
+
+            {selectedDepartamento === 'Fray Bentos' && (
+              <div>
+                <p className="text-center">Información detallada sobre Fray Bentos...</p>
+                <img src="fraymodal.jpg"  alt="Fray Bentos Detalles" className="mx-auto mt-4 rounded-xl" />
+              </div>
+            )}
+
+            {selectedDepartamento === 'Durazno' && (
+              <div>
+                <p className="text-center">Información detallada sobre Durazno...</p>
+                <img src="durazno_detalles.png" alt="Durazno Detalles" className="mx-auto mt-4 rounded-xl" />
+              </div>
+            )}
+
+            <button onClick={() => setShowModal(false)} className="bg-blue-500 text-white p-2 mt-4 rounded-2xl">Cerrar</button>
           </div>
         </div>
       )}

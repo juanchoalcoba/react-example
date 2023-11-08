@@ -11,8 +11,8 @@ const Seccion3 = () => {
             </div>
             <div className='mr-12'>
                 <img 
-                className="w-[600px] border border-white rounded-2x"
-                src="./prog.webp" alt="" />
+                className="w-[500px] h-[350px]  rounded-2x"
+                src="./prog.jpg" alt="" />
                 
             </div>
         </div>
