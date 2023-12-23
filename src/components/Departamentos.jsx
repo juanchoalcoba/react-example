@@ -36,7 +36,7 @@ const Departamentos = () => {
   }, []);
 
   return (
-    <div className="departamentos-container mt-24">
+    <div className="departamentos-container mt-48">
       {/* Tarjeta 1 */}
       <div className="card-animation w-[20rem] rounded-xl flex flex-col justify-around border border-gray-400 sm:flex sm:flex-col">
         <div className="text-white">

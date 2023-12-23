@@ -1,7 +1,8 @@
 .imagen {
     position: absolute;
+    left: 46%;
     filter: grayscale();
-    width: 900px;
-    opacity: 0.4;
+    width: 700px;
+    opacity: 0.3;
 
 }
