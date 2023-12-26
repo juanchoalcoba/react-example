@@ -8,6 +8,7 @@ import SobreUruguay from './components/SobreUruguay'
 import Seccion3 from './components/Seccion3'
 import Utec from './components/Utec.jsx'
 import Departamentos from './components/Departamentos.jsx'
+import CardsInformation from './components/CardsInformation.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -19,6 +20,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Seccion3 />
     <Utec />
     <Departamentos />
+    <CardsInformation />
     </div>
   </React.StrictMode>,
 )

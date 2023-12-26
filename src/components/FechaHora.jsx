@@ -23,7 +23,7 @@ const FechaHoraActual = () => {
 
   return (
     <div
-      className="border border-white flex flex-col items-center w-[500px] justify-center ml-36 bg-gray-200 bg-opacity-10 text-white px-8 rounded-xl"
+      className="border border-white flex flex-col items-center w-[520px] justify-center ml-36 bg-gray-200 bg-opacity-10 text-white px-8 rounded-xl"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
