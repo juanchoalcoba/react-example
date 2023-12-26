@@ -28,7 +28,7 @@ const ImagenAnimada = () => {
   }, []);
 
   return (
-    <div className="flex items-center justify-around mt-20 section" ref={sectionRef}>
+    <div className="flex items-center justify-around mt-[60px] section" ref={sectionRef}>
       <div className="">
         <h1 className="text-[#b0c1ca] font-bold text-8xl title-animation"><span className="text-yellow-400">U</span>RU<span className="text-[#6b91a5]">GUAY</span> <br /> <span><span className="text-[#6b91a5]">TEC</span>NOLOGÍA</span></h1>
         <p className="text-[#c0dad4] w-[500px] font-light mt-8 text-3xl">Bievenidos, da tu primer paso en el mundo tencológico. Descubre la sensación.</p>
